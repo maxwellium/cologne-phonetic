@@ -36,8 +36,8 @@ var
   ],
 
   modifiers = [
-    [ /\B0/g              , ''    ], // remove 0s except for first char
-    [ /[^\w\s]|(.)(?=\1)/g, ''    ]  // reduce consecutive duplicates to one
+    [ /\B0/g                , ''  ], // remove 0s except for first char
+    [ /([^\w\s])|(.)(?=\2)/g, ''  ]  // reduce consecutive duplicates to one
   ];
 
 
