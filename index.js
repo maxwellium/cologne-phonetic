@@ -32,12 +32,12 @@ var
     [ /l/g                , '5'   ],
     [ /[mn]/g             , '6'   ],
     [ /r/g                , '7'   ],
-    [ /[csz]/g            , '8'   ],
+    [ /[csz]/g            , '8'   ]
   ],
 
   modifiers = [
-    [ /\B0/g                , ''  ], // remove 0s except for first char
-    [ /([^\w\s])|(.)(?=\2)/g, ''  ]  // reduce consecutive duplicates to one
+    [ /([^\w\s])|(.)(?=\2)/g, ''  ], // reduce consecutive duplicates to one
+    [ /\B0/g                , ''  ]  // remove 0s except for first char
   ];
 
 
