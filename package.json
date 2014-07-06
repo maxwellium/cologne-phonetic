@@ -1,6 +1,6 @@
 {
-  "name": "colognePhonetic",
-  "version": "0.0.3",
+  "name": "cologne-phonetic",
+  "version": "0.0.4",
   "description": "Clean and simple regex implentation of Kölner Phonetik, a soundex-like algorithm for German language",
   "keywords": [
     "Kölner",

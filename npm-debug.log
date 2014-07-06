@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.20
+3 info using node@v0.10.29
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/maxwellium/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz
+13 verbose folder .
+14 info prepublish cologne-phonetic@0.0.3
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/maxwellium/.npm/1f1177db-tar.lock
+17 silly lockFile eada9c87-logne-phonetic-0-0-3-package-tgz tar:///Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz
+18 verbose lock tar:///Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz /Users/maxwellium/.npm/eada9c87-logne-phonetic-0-0-3-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile eada9c87-logne-phonetic-0-0-3-package-tgz tar:///Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz
+22 silly lockFile eada9c87-logne-phonetic-0-0-3-package-tgz tar:///Users/maxwellium/.npm/cologne-phonetic/0.0.3/package.tgz
+23 silly lockFile 8903c924-m-cologne-phonetic-0-0-3-package /Users/maxwellium/.npm/cologne-phonetic/0.0.3/package
+24 verbose lock /Users/maxwellium/.npm/cologne-phonetic/0.0.3/package /Users/maxwellium/.npm/8903c924-m-cologne-phonetic-0-0-3-package.lock
+25 silly lockFile 8903c924-m-cologne-phonetic-0-0-3-package /Users/maxwellium/.npm/cologne-phonetic/0.0.3/package
+26 silly lockFile 8903c924-m-cologne-phonetic-0-0-3-package /Users/maxwellium/.npm/cologne-phonetic/0.0.3/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'cologne-phonetic',
+29 silly publish   version: '0.0.3',
+29 silly publish   description: 'Clean and simple regex implentation of Kölner Phonetik, a soundex-like algorithm for German language',
+29 silly publish   keywords: [ 'Kölner', 'Phonetik', 'cologne', 'phonetic', 'soundex', 'german' ],
+29 silly publish   author: { name: 'Maxwellium', email: 'max@lawyer.com' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'git://github.com/maxwellium/colognephonetic.git' },
+29 silly publish   devDependencies: { mocha: '*' },
+29 silly publish   main: 'index',
+29 silly publish   scripts: { test: 'make test' },
+29 silly publish   component: { scripts: { colognePhonetic: './index.js' } },
+29 silly publish   gitHead: '5a6711bca2a1337ba516b9c3323bf879ed556d27',
+29 silly publish   bugs: { url: 'https://github.com/maxwellium/colognephonetic/issues' },
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   homepage: 'https://github.com/maxwellium/colognephonetic',
+29 silly publish   _id: 'cologne-phonetic@0.0.3',
+29 silly publish   _shasum: '2419a238bba5d95cd06211f22217405cae5616a8',
+29 silly publish   _from: '.' }
+30 verbose request where is /cologne-phonetic
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 91d2c6e701f79a51
+33 verbose url raw /cologne-phonetic
+34 verbose url resolving [ 'https://registry.npmjs.org/', './cologne-phonetic' ]
+35 verbose url resolved https://registry.npmjs.org/cologne-phonetic
+36 verbose request where is https://registry.npmjs.org/cologne-phonetic
+37 info trying registry request attempt 1 at 12:20:06
+38 http PUT https://registry.npmjs.org/cologne-phonetic
+39 http 403 https://registry.npmjs.org/cologne-phonetic
+40 verbose headers { date: 'Sun, 06 Jul 2014 10:20:08 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=30',
+40 verbose headers   'content-length': '2556',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1404642007.425394,VS0,VE702',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.0.3
+42 error old={"name":"cologne-phonetic","version":"0.0.3","description":"Clean and simple regex implentation of Kölner Phonetik, a soundex-like algorithm for German language","keywords":["Kölner","Phonetik","cologne","phonetic","soundex","german"],"author":{"name":"Maxwellium","email":"max@lawyer.com"},"repository":{"type":"git","url":"git://github.com/maxwellium/colognephonetic.git"},"devDependencies":{"mocha":"*"},"main":"index","scripts":{"test":"make test"},"component":{"scripts":{"colognePhonetic":"./index.js"}},"gitHead":"e6bb5b8eecc5f8ffa3832e33b7215ac93c8291f5","bugs":{"url":"https://github.com/maxwellium/colognephonetic/issues"},"homepage":"https://github.com/maxwellium/colognephonetic","_id":"cologne-phonetic@0.0.3","_shasum":"0fbd9edd326621989c25ed821a74397ee50a6108","_from":".","_npmVersion":"1.5.0-alpha-1","_npmUser":{"name":"maxwellium","email":"max@lawyer.com"},"maintainers":[{"name":"maxwellium","email":"max@lawyer.com"}],"dist":{"shasum":"0fbd9edd326621989c25ed821a74397ee50a6108","tarball":"http://registry.npmjs.org/cologne-phonetic/-/cologne-phonetic-0.0.3.tgz"}}
+42 error new={"name":"cologne-phonetic","version":"0.0.3","description":"Clean and simple regex implentation of Kölner Phonetik, a soundex-like algorithm for German language","keywords":["Kölner","Phonetik","cologne","phonetic","soundex","german"],"author":{"name":"Maxwellium","email":"max@lawyer.com"},"repository":{"type":"git","url":"git://github.com/maxwellium/colognephonetic.git"},"devDependencies":{"mocha":"*"},"main":"index","scripts":{"test":"make test"},"component":{"scripts":{"colognePhonetic":"./index.js"}},"gitHead":"5a6711bca2a1337ba516b9c3323bf879ed556d27","bugs":{"url":"https://github.com/maxwellium/colognephonetic/issues"},"readme":"ERROR: No README data found!","homepage":"https://github.com/maxwellium/colognephonetic","_id":"cologne-phonetic@0.0.3","_shasum":"2419a238bba5d95cd06211f22217405cae5616a8","_from":".","_npmVersion":"1.4.20","_npmUser":{"name":"maxwellium","email":"max@lawyer.com"},"maintainers":[{"name":"maxwellium","email":"max@lawyer.com"}],"dist":{"shasum":"2419a238bba5d95cd06211f22217405cae5616a8","tarball":"http://registry.npmjs.org/cologne-phonetic/-/cologne-phonetic-0.0.3.tgz"}}: cologne-phonetic
+42 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+42 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+42 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:929:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Darwin 13.3.0
+45 error command "node" "/usr/local/bin/npm" "publish"
+46 error cwd /Users/maxwellium/Dropbox/source/colognephonetic
+47 error node -v v0.10.29
+48 error npm -v 1.4.20
+49 verbose exit [ 1, true ]
