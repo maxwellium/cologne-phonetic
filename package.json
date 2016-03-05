@@ -20,7 +20,7 @@
   },
   "main": "index",
   "scripts": {
-    "test": "make test"
+    "test": "mocha --reporter list"
   },
   "component": {
     "scripts": {
