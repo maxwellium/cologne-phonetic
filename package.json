@@ -1,6 +1,6 @@
 {
   "name": "cologne-phonetic",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Clean and simple regex implentation of Kölner Phonetik, a soundex-like algorithm for German language",
   "keywords": [
     "Kölner",
@@ -11,7 +11,7 @@
     "german"
   ],
   "author": "Maxwellium <max@lawyer.com>",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/maxwellium/colognephonetic.git"
   },
