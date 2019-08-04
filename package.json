@@ -10,21 +10,24 @@
     "soundex",
     "german"
   ],
-  "author": "Maxwellium <max@lawyer.com>",
+  "author": "maxwellium",
+  "license": "MIT",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc -p ."
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/maxwellium/colognephonetic.git"
+    "url": "git://github.com/maxwellium/cologne-phonetic.git"
   },
   "devDependencies": {
-    "mocha": "*"
-  },
-  "main": "index",
-  "scripts": {
-    "test": "mocha --reporter list"
-  },
-  "component": {
-    "scripts": {
-      "colognePhonetic": "./index.js"
-    }
+    "@types/jest": "^24.0.16",
+    "jest": "^24.8.0",
+    "typescript": "^3.5.3"
   }
 }
