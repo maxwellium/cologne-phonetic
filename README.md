@@ -3,6 +3,9 @@ Soundex-like algorithm for German language. Reduces phrases to their phonetic st
 
 see [Wikipedia](https://en.wikipedia.org/wiki/Cologne_phonetics) ([or in German](https://de.wikipedia.org/wiki/K%C3%B6lner_Phonetik))
 
+## Try it
+https://maxwellium.github.io/cologne-phonetic/
+
 ## Usage
 ```javascript
 const { strictEqual } = require( 'assert' );
