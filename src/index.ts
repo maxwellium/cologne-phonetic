@@ -12,7 +12,8 @@ const rules: [ RegExp, string ][] = [
   [ /[sz]c/g              , '88' ], // double digits will be reduced later -- but this is easier to debug ;)
   [ /^c(?=[ahkloqrux])/   , '4'  ],
   [ /^c/                  , '8'  ],
-  [ /(?<![sz])c/g         , '4'  ],
+  [ /c(?=[ahkoqux])/      , '4'  ],
+  [ /c$/                  , '4'  ],
   [ /x/g                  , '48' ],
   [ /p(?!h)/g             , '1'  ],
   [ /p(?=h)/g             , '3'  ],
