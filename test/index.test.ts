@@ -11,6 +11,17 @@ const FIXTURES: [ string, string ][] = [
   [ 'Meier'              , '67'       ],
   [ 'Mayr'               , '67'       ],
   [ 'Maier'              , '67'       ],
+  [ 'C'                  , '8'        ],
+  [ 'Carl'               , '475'      ],
+  [ 'Marcel'             , '6785'     ],
+  [ 'Ärger'              , '0747'     ],
+  [ 'Aerger'             , '0747'     ],
+  [ 'Erker'              , '0747'     ],
+  [ 'Dominic'            , '2664'     ],
+  [ 'Dominik'            , '2664'     ],
+  [ 'Chillischote'       , '4582'     ],
+  [ 'Manchester'         , '664827'   ],
+  [ 'Arche'              , '074'      ],
 ];
 
 test( 'colognePhonetic', () => {

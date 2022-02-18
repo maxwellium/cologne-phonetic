@@ -12,10 +12,21 @@ const FIXTURES = [
     ['Meier', '67'],
     ['Mayr', '67'],
     ['Maier', '67'],
+    ['C', '8'],
+    ['Carl', '475'],
+    ['Marcel', '6785'],
+    ['Ärger', '0747'],
+    ['Aerger', '0747'],
+    ['Erker', '0747'],
+    ['Dominic', '2664'],
+    ['Dominik', '2664'],
+    ['Chillischote', '4582'],
+    ['Manchester', '664827'],
+    ['Arche', '074'],
 ];
 test('colognePhonetic', () => {
     for (const [phrase, kph] of FIXTURES) {
-        expect(src_1.colognePhonetic(phrase)).toBe(kph);
+        expect((0, src_1.colognePhonetic)(phrase)).toBe(kph);
     }
 });
 //# sourceMappingURL=index.test.js.map
