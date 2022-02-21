@@ -23,6 +23,14 @@ const FIXTURES = [
     ['Chillischote', '4582'],
     ['Manchester', '664827'],
     ['Arche', '074'],
+    ['Hand', '062'],
+    ['FIFA', '33'],
+    ['ADAC', '024'],
+    ['Hai', '0'],
+    ['Didi', '22'],
+    ['Fix', '348'],
+    ['Fixx', '34848'],
+    ['XXL', '48485'],
 ];
 test('colognePhonetic', () => {
     for (const [phrase, kph] of FIXTURES) {
