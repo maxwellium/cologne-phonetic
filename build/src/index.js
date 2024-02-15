@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.colognePhonetic = void 0;
 const rules = [
     // substitutions
     [/ä/g, 'a'],
@@ -14,7 +15,8 @@ const rules = [
     [/[sz]c/g, '88'],
     [/^c(?=[ahkloqrux])/, '4'],
     [/^c/, '8'],
-    [/(?<![sz])c/g, '4'],
+    [/c(?=[ahkoqux])/, '4'],
+    [/c$/, '4'],
     [/x/g, '48'],
     [/p(?!h)/g, '1'],
     [/p(?=h)/g, '3'],
@@ -32,5 +34,6 @@ const rules = [
     [/([^\w\s])|(.)(?=\2)/g, ''],
     [/\B0/g, ''] // remove 0s except for first char
 ];
-exports.colognePhonetic = (phrase) => rules.reduce((kph, [search, replace]) => kph.replace(search, replace), phrase.toLowerCase());
+const colognePhonetic = (phrase) => rules.reduce((kph, [search, replace]) => kph.replace(search, replace), phrase.toLowerCase());
+exports.colognePhonetic = colognePhonetic;
 //# sourceMappingURL=index.js.map
