@@ -8,8 +8,8 @@ https://maxwellium.github.io/cologne-phonetic/
 
 ## Usage
 ```javascript
-const { strictEqual } = require( 'assert' );
-const { colognePhonetic } = require( 'cologne-phonetic' );
+import { equal } from 'node:assert/strict';
+import { colognePhonetic } from 'cologne-phonetic';
 
 const FIXTURES = [
   [ 'müller'             , '657'      ],
