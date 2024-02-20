@@ -26,8 +26,8 @@
     "url": "git://github.com/maxwellium/cologne-phonetic.git"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.0",
-    "jest": "^27.5.1",
+    "@types/node": "^20.11.18",
+    "typescript": "^5.3.3"
     "typescript": "^4.5.5"
   }
 }
