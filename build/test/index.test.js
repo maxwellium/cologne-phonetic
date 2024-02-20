@@ -1,6 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const src_1 = require("../src");
+import { equal } from 'node:assert/strict';
+import { colognePhonetic } from '../src/index.js';
+const RESET = '\x1b[0m', _red = (text) => ['\x1b[31m', text, RESET].join(''), _green = (text) => ['\x1b[32m', text, RESET].join(''), _bright = (text) => ['\x1b[1m', text, RESET].join('');
 const FIXTURES = [
     ['müller', '657'],
     ['schmidt', '862'],
@@ -18,23 +18,33 @@ const FIXTURES = [
     ['Ärger', '0747'],
     ['Aerger', '0747'],
     ['Erker', '0747'],
-    ['Dominic', '2664'],
+    ['Dominic', '2664'], // would be 2668 according to strict algorithm
     ['Dominik', '2664'],
     ['Chillischote', '4582'],
     ['Manchester', '664827'],
     ['Arche', '074'],
     ['Hand', '062'],
     ['FIFA', '33'],
-    ['ADAC', '024'],
+    ['ADAC', '024'], // would be 028 according to strict algorithm
     ['Hai', '0'],
     ['Didi', '22'],
     ['Fix', '348'],
     ['Fixx', '34848'],
     ['XXL', '48485'],
 ];
-test('colognePhonetic', () => {
-    for (const [phrase, kph] of FIXTURES) {
-        expect((0, src_1.colognePhonetic)(phrase)).toBe(kph);
+console.log(_bright('testing colognePhonetic'));
+let hasErrored = false;
+for (const [phrase, expected] of FIXTURES) {
+    const actual = colognePhonetic(phrase);
+    try {
+        equal(actual, expected);
+        console.error(_green(` ✔ passed fixture "${phrase}"`));
     }
-});
-//# sourceMappingURL=index.test.js.map
+    catch (e) {
+        console.log(_red(` ✖ "${phrase}" did not yield "${expected}" but "${actual}"`));
+        hasErrored = true;
+    }
+}
+if (hasErrored) {
+    process.exit(1);
+}
