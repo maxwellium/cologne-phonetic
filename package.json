@@ -9,10 +9,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "cologne-phonetic": "^1.0.0"
+    "cologne-phonetic": "^1.1.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
-    "typescript": "^3.5.3"
-  }
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^5.3.3"
+  },
+  "type": "module"
 }

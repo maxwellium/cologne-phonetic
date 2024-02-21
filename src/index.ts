@@ -1,4 +1,4 @@
-import { colognePhonetic } from 'cologne-phonetic';
+import { colognePhonetic } from '../node_modules/cologne-phonetic/build/src/index.js';
 
 const input = <HTMLInputElement> document.getElementById( 'input' );
 const output = <HTMLPreElement> document.getElementById( 'output' );
