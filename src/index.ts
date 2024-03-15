@@ -1,8 +1,17 @@
 import { colognePhonetic } from '../node_modules/cologne-phonetic/build/src/index.js';
 
-const input = <HTMLInputElement> document.getElementById( 'input' );
-const output = <HTMLPreElement> document.getElementById( 'output' );
-const renderColognePhonetic = () => output.innerText = input.value.split( '\n' ).map( colognePhonetic ).join( '\n' );
+const input = <HTMLInputElement>document.getElementById('input');
+const output = <HTMLInputElement>document.getElementById('output');
 
-input.addEventListener( 'input', renderColognePhonetic );
+function renderColognePhonetic() {
+
+  const phrases = input.value.split('\n');
+
+  input.setAttribute('rows', String(phrases.length));
+  output.setAttribute('rows', String(phrases.length));
+
+  output.value = phrases.map(colognePhonetic).join('\n');
+}
+
+input.addEventListener('input', renderColognePhonetic);
 renderColognePhonetic();
