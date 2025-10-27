@@ -37,6 +37,7 @@ const FIXTURES: [phrase: string, expected: string][] = [
   ['Fix', '348'],
   ['Fixx', '34848'],
   ['XXL', '48485'],
+  ['Woodcock', '3844'],
 ];
 
 
