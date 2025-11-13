@@ -31,6 +31,7 @@ const FIXTURES = [
     ['Fix', '348'],
     ['Fixx', '34848'],
     ['XXL', '48485'],
+    ['Woodcock', '3844'],
 ];
 console.log(_bright('testing colognePhonetic'));
 let hasErrored = false;
