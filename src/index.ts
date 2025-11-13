@@ -1,10 +1,10 @@
 const rules: [ RegExp, string ][] = [
   // substitutions
-  [ /ä/g                  , 'a' ],
-  [ /ö/g                  , 'o' ],
-  [ /ü/g                  , 'u' ],
-  [ /ß/g                  , '8' ],
-  [ /[^a-z]/g             , ''  ],
+  [ /ä/g                  , 'a'  ],
+  [ /ö/g                  , 'o'  ],
+  [ /ü/g                  , 'u'  ],
+  [ /ß/g                  , 'ss' ],
+  [ /[^a-z]/g             , ''   ],
   // complex rules
   [ /[dt](?![csz])/g      , '2'  ], // [csz] are replaced soon, so this
   [ /[dt](?=[csz])/g      , '8'  ], // needs to exec early

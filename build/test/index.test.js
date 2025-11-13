@@ -1,6 +1,4 @@
-import { equal } from 'node:assert/strict';
 import { colognePhonetic } from '../src/index.js';
-const RESET = '\x1b[0m', _red = (text) => ['\x1b[31m', text, RESET].join(''), _green = (text) => ['\x1b[32m', text, RESET].join(''), _bright = (text) => ['\x1b[1m', text, RESET].join('');
 const FIXTURES = [
     ['müller', '657'],
     ['schmidt', '862'],
@@ -32,20 +30,24 @@ const FIXTURES = [
     ['Fixx', '34848'],
     ['XXL', '48485'],
     ['Woodcock', '3844'],
+    ['Schüßler', '8857'],
+    ['Schuessler', '8857'],
+    ['Schussler', '8857'],
+    ['Fußgänger', '384647'],
+    ['Fussgaenger', '384647'],
 ];
-console.log(_bright('testing colognePhonetic'));
+console.log('\x1b[1m', 'testing colognePhonetic', '\x1b[0m');
 let hasErrored = false;
 for (const [phrase, expected] of FIXTURES) {
     const actual = colognePhonetic(phrase);
-    try {
-        equal(actual, expected);
-        console.error(_green(` ✔ passed fixture "${phrase}"`));
+    if (actual === expected) {
+        console.log('\x1b[32m', ` ✔ passed fixture "${phrase}"`, '\x1b[0m');
     }
-    catch (e) {
-        console.log(_red(` ✖ "${phrase}" did not yield "${expected}" but "${actual}"`));
+    else {
+        console.error('\x1b[31m', ` ✖ "${phrase}" did not yield "${expected}" but "${actual}"`, '\x1b[0m');
         hasErrored = true;
     }
 }
 if (hasErrored) {
-    process.exit(1);
+    throw new Error('Some tests did not pass!');
 }

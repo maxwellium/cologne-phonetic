@@ -3,7 +3,7 @@ const rules = [
     [/ä/g, 'a'],
     [/ö/g, 'o'],
     [/ü/g, 'u'],
-    [/ß/g, '8'],
+    [/ß/g, 'ss'],
     [/[^a-z]/g, ''],
     // complex rules
     [/[dt](?![csz])/g, '2'], // [csz] are replaced soon, so this
